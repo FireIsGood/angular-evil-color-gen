@@ -864,21 +864,23 @@ function getStateSysVariablesCSS(): string {
 export function getAllSysVariablesCSS(lightColorScheme: DynamicScheme, darkColorScheme: DynamicScheme): string {
   let css = "";
 
-  css += "  /* COLOR SYSTEM VARIABLES */\n";
-  css += "  color-scheme: light;\n\n";
+  // Um actually don't
+  // css += "  /* COLOR SYSTEM VARIABLES */\n";
+  // css += "  color-scheme: light;\n\n";
   css += getColorSysVariablesCSS(lightColorScheme, darkColorScheme);
 
-  css += "\n  /* TYPOGRAPHY SYSTEM VARIABLES */\n";
-  css += getTypographySysVariablesCSS();
-
-  css += "\n  /* ELEVATION SYSTEM VARIABLES */\n";
-  css += getElevationSysVariablesCSS();
-
-  css += "\n  /* SHAPE SYSTEM VARIABLES */\n";
-  css += getShapeSysVariablesCSS();
-
-  css += "\n  /* STATE SYSTEM VARIABLES */\n";
-  css += getStateSysVariablesCSS();
+  // Um actually don't
+  // css += "\n  /* TYPOGRAPHY SYSTEM VARIABLES */\n";
+  // css += getTypographySysVariablesCSS();
+  //
+  // css += "\n  /* ELEVATION SYSTEM VARIABLES */\n";
+  // css += getElevationSysVariablesCSS();
+  //
+  // css += "\n  /* SHAPE SYSTEM VARIABLES */\n";
+  // css += getShapeSysVariablesCSS();
+  //
+  // css += "\n  /* STATE SYSTEM VARIABLES */\n";
+  // css += getStateSysVariablesCSS();
 
   return css;
 }
@@ -974,7 +976,7 @@ export default function wow(options) {
 
   let themeCss = "";
   themeCss += "/* Note: " + colorComment + " */\n";
-  themeCss += "html {\n";
+  themeCss += ":root {\n";
 
   const lightColorScheme = getMaterialDynamicScheme(
     colorPalettes.primary,
