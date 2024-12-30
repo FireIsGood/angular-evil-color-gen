@@ -20,6 +20,10 @@ Modify the `index.ts` variables and then run the `dev` script.
 npm run dev
 ```
 
+Output CSS files are placed in `output/`.
+
+I was too lazy to think about making them rename if you wrote over the same scheme so it just overwrites.
+
 ## Contributing
 
 Why?
